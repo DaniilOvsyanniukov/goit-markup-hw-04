@@ -19,7 +19,6 @@ html{
 img {
     display: block;
     max-width: 100%;
-    height: auto;
 }
 
 *,
@@ -183,25 +182,25 @@ header .link:focus{
 /* Контент */
 /* Герой */
 .hero{
+
     color: var(--secondary-text-color);
     text-align: center;
-    /* align-items: center; */
 }
+
 .background-container{
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+    padding: 200px 15px;
     background-color: var(--hero-background-color);
     background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/Img.jpg);
     background-size: cover;
     background-position: center;
 
 }
+
 .hero .title{
-    padding-top: 200px;
-    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -263,9 +262,10 @@ header .link:focus{
 }
 .icon-container{
     margin-bottom: 30px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
-    padding: 25px 100px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
 }
@@ -355,16 +355,16 @@ header .link:focus{
     max-width: 270px;
 }
 .team .social-list{
-    margin: 0 2px;
-    max-width: 206px;
     display: flex;
+    justify-content: space-between;
     padding: 0;
-    justify-content:space-between;
     fill: var(--social-network-icon-color);
 }
 
 .social-networks{
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -389,13 +389,18 @@ header .link:focus{
     display:flex;
 }
 
+.client .item{
+    width: 170px;
+    height: 90px;
+}
+
 .client .item:not(:last-child){
     margin-right: 30px;
 }
 .client .card{
     display: flex;
-    width: 170px;
-    height: 90px;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
     border: 1px solid var(--social-network-icon-color);
     fill: var(--social-network-icon-color);
@@ -429,9 +434,7 @@ header .link:focus{
 .footer .container{
     display: flex;
 }
-.footer .info{
-    margin-right: 70px;
-}
+
 .footer .logo{
     margin-right: 0;
     margin-bottom: 20px;
@@ -457,8 +460,8 @@ header .link:focus{
     color: var(--accent-color);
 }
 .social-container{
-    width: 206px;
-    padding-top: 12px;
+    align-self: center;
+    margin-left: 70px;
 }
 .footer .title{
     display: block;
@@ -466,24 +469,22 @@ header .link:focus{
     margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+    line-height: 1.143;
 }
 
 .footer .social-list{
-    max-width: 206px;
     display: flex;
+    margin: 0;
     padding: 0;
-    justify-content:space-between;
     fill: var(--primary-background-color);
-    }
+}
+
 .footer .social-networks{
-    padding: 12px;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
     background-color: var(--footer-social-background-icon-color);
     fill: var(--primary-background-color)
+}
+.footer .social-item:not(:last-child){
+    margin-right: 10px;
 }
 .footer .social-networks:hover,
 .footer .social-networks:focus{
@@ -529,6 +530,9 @@ header .link:focus{
 .search .button:focus{
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .search .used{
@@ -545,17 +549,13 @@ header .link:focus{
     justify-content:center;
 }
 
-.portfolio img{
-    min-width: 370px;
-    min-height: 294px;
-}
-
 .portfolio .item{
     margin-bottom: 30px;
     margin-right: 30px;
 }
-.portfolio .item:hover,
-.portfolio .item:focus{
+
+.portfolio .link:hover,
+.portfolio .link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
