@@ -433,6 +433,7 @@ header .link:focus{
 }
 .footer .container{
     display: flex;
+    align-items: baseline;
 }
 
 .footer .logo{
@@ -460,7 +461,6 @@ header .link:focus{
     color: var(--accent-color);
 }
 .social-container{
-    align-self: center;
     margin-left: 70px;
 }
 .footer .title{
